@@ -1,14 +1,13 @@
-import rosepine
-
-rosepine.setup(c, 'rose-pine', True)
+#import rosepine
+#rosepine.setup(c, 'rose-pine', True)
 
 c.url.start_pages = ["https://www.google.com/"]
 
-# c.colors.statusbar.normal.bg = "#00000000"
-# c.colors.statusbar.command.bg = "#00000000"
-# c.colors.tabs.even.bg = "#00000000"
-# c.colors.tabs.odd.bg = "#00000000"
-# c.colors.tabs.bar.bg = "#00000000"
+c.colors.statusbar.normal.bg = "#00000000"
+c.colors.statusbar.command.bg = "#00000000"
+c.colors.tabs.even.bg = "#00000000"
+c.colors.tabs.odd.bg = "#00000000"
+c.colors.tabs.bar.bg = "#00000000"
 
 c.tabs.title.format = "{audio}{current_title}"
 c.fonts.web.size.default = 20
@@ -30,4 +29,8 @@ c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.darkmode.policy.images = 'never'
 
 c.content.blocking.enabled = True
+
+# bloqueador de anuncios
+c.content.blocking.enabled = True
+c.content.blocking.method = "both"
 
